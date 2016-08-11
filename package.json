@@ -19,7 +19,7 @@
     "moment": "~2.0.0"
   },
   "scripts":{
-    "start": "node server.js"
+    "start": "grunt"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
