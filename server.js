@@ -13,7 +13,7 @@ var io = require('socket.io').listen(server);
 var device  = require('express-device');
 
 
-var runningPortNumber = normalizePort(process.env.PORT || '3000')
+var runningPortNumber =3000; 
 
 
 app.configure(function(){
