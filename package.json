@@ -32,8 +32,8 @@
     "nodemon": "~0.7.10"
   },
   "scripts":{
-    "grunt": "node /node_modules/grunt",
-    "start":"node server.js"
+    "postinstall": "grunt uglify",
+    "start": "node server.js"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
