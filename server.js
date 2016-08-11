@@ -12,7 +12,8 @@ var server = require('http').createServer(app)
 var io = require('socket.io').listen(server);
 var device  = require('express-device');
 
-var runningPortNumber = process.env.PORT || 80;
+
+var runningPortNumber = normalizePort(process.env.PORT || '3000')
 
 
 app.configure(function(){

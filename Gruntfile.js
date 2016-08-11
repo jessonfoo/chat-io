@@ -1,8 +1,7 @@
 // Generated on 2016-08-11 using generator-socketio 0.0.3
 var moment = require('moment');
 var LIVERELOAD_PORT = 35729;
-var RUNNING_PORT = 80; // <- if you change this, you need to change in public/js/app.js and recompile
-var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
+var RUNNING_PORT = 3000; // <- if you change this, you need to change in public/js/app.js and recompile // var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
@@ -129,7 +128,7 @@ module.exports = function (grunt) {
       options: {
         port: RUNNING_PORT,//variable at top of this file
         // change this to '0.0.0.0' to access the server from outside
-        hostname: 'localhost'
+        hostname: '0.0.0.0'
       },
       livereload: {
         options: {
