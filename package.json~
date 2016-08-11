@@ -13,7 +13,7 @@
     "express-device": "~0.3.7"
   },
   "scripts":{
-    "start": "grunt"
+    "start": "node server.js"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
